@@ -1,0 +1,2 @@
+# AthanSal-privacy
+privacy policy
