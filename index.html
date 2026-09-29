@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سياسة الخصوصية | AthanSal</title>
+<meta name="description" content="سياسة الخصوصية لتطبيق AthanSal - أذونات الكاميرا ومستشعر التقارب والإشعارات">
+<style>
+  :root{
+    --bg:#f6f8fa;
+    --card:#ffffff;
+    --text:#1a1a2e;
+    --muted:#5c6470;
+    --accent:#0d6e6e;
+    --accent-dark:#0a4f4f;
+    --border:#e3e8ee;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.9;
+    padding:20px 14px 40px;
+  }
+  .wrap{max-width:840px;margin:0 auto}
+
+  /* ===== Header ===== */
+  header{
+    background:linear-gradient(135deg,var(--accent),var(--accent-dark));
+    color:#fff;
+    border-radius:var(--radius);
+    padding:38px 24px;
+    text-align:center;
+    margin-bottom:18px;
+    box-shadow:0 6px 22px rgba(13,110,110,.18);
+  }
+  header h1{font-size:1.9rem;letter-spacing:.3px}
+  header p{font-size:.95rem;opacity:.9;margin-top:6px}
+
+  /* ===== Language switch ===== */
+  .lang{
+    display:flex;justify-content:center;gap:10px;margin-bottom:20px;
+  }
+  .lang button{
+    padding:9px 26px;
+    border:1px solid var(--border);
+    background:var(--card);
+    color:var(--muted);
+    border-radius:10px;
+    font-size:.92rem;
+    font-weight:700;
+    cursor:pointer;
+    font-family:inherit;
+    transition:.2s;
+  }
+  .lang button:hover{border-color:var(--accent);color:var(--accent)}
+  .lang button.active{
+    background:var(--accent);color:#fff;border-color:var(--accent);
+    box-shadow:0 4px 12px rgba(13,110,110,.25);
+  }
+
+  /* ===== Sections ===== */
+  .card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:22px 26px;
+    margin-bottom:14px;
+    box-shadow:0 1px 3px rgba(0,0,0,.03);
+  }
+  .card h2{
+    display:flex;align-items:center;gap:10px;
+    font-size:1.1rem;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+  .card h2 .num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:28px;height:28px;flex:0 0 28px;
+    border-radius:50%;
+    background:var(--accent);color:#fff;
+    font-size:.82rem;font-weight:700;
+  }
+  .card p{font-size:.95rem;color:#2b2f3a;margin-bottom:8px}
+  .card ul{padding-inline-start:22px;margin-top:6px}
+  .card li{font-size:.95rem;color:#2b2f3a;margin-bottom:8px}
+  .card li strong{color:var(--accent-dark)}
+
+  .note{
+    background:#eef7f7;
+    border-inline-start:4px solid var(--accent);
+    border-radius:8px;
+    padding:12px 16px;
+    margin-top:12px;
+    font-size:.9rem;
+    color:#26504f;
+  }
+
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:.85rem;
+    padding:18px 10px 0;
+  }
+
+  /* ===== Language display logic ===== */
+  .en{display:none}
+  body.show-en .ar{display:none}
+  body.show-en .en{display:block}
+
+  @media (max-width:520px){
+    header h1{font-size:1.4rem}
+    .card{padding:18px 16px}
+    .card h2{font-size:1rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <h1>AthanSal</h1>
+    <p class="ar">سياسة الخصوصية</p>
+    <p class="en">Privacy Policy</p>
+  </header>
+
+  <div class="lang">
+    <button id="btn-ar" class="active" onclick="setLang('ar')">العربية</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ==================== ARABIC ==================== -->
+  <div class="ar">
+
+    <div class="card">
+      <h2><span class="num">1</span> مقدمة</h2>
+      <p>يلتزم المطوّر <strong>AppSal</strong> ("نحن") بحماية خصوصية مستخدمي تطبيق <strong>AthanSal</strong>. توضّح هذه الوثيقة كيفية تعامل التطبيق مع البيانات والأذونات المستخدمة، ونلتزم بعدم جمع أي بيانات شخصية أو مشاركتها مع أي طرف ثالث.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">2</span> الأذونات المستخدمة</h2>
+      <p>يطلب تطبيق AthanSal الأذونات التالية لأغراض وظيفية محددة فقط:</p>
+      <ul>
+        <li><strong>الكاميرا:</strong> تُستخدم حصرياً لعدّ الركعات أثناء الصلاة. لا يتم تسجيل أو تخزين أو مشاركة أي صور أو مقاطع فيديو، وتتم المعالجة محلياً على الجهاز.</li>
+        <li><strong>مستشعر التقارب (Proximity Sensor):</strong> يُستخدم بالاقتران مع الكاميرا لتحسين دقة عدّ الركعات. لا يجمع أي بيانات شخصية.</li>
+        <li><strong>الإشعارات:</strong> تُستخدم لإرسال تنبيهات أوقات الصلاة والتذكيرات. يمكنك تعطيلها في أي وقت من إعدادات التطبيق أو إعدادات النظام.</li>
+      </ul>
+      <div class="note">
+        جميع الأذونات تُستخدم فقط أثناء تشغيل الميزة المعنية، ولا يتم تخزين أي بيانات ناتجة عنها على خوادم خارجية.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">3</span> البيانات التي لا نجمعها</h2>
+      <ul>
+        <li>لا نطلب أو نجمع بيانات الموقع الجغرافي الدقيق (GPS).</li>
+        <li>لا نصل إلى جهات الاتصال أو الرسائل أو الملفات الشخصية.</li>
+        <li>لا نبيع أو نشارك أو نتاجر بأي بيانات شخصية مع أطراف ثالثة.</li>
+        <li>لا نجمع بيانات بيومترية أو صوراً أو تسجيلات صوتية.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">4</span> التخزين المحلي</h2>
+      <p>يتم حفظ تفضيلات المستخدم (مثل إعدادات الإشعارات والصوت والمظهر) محلياً على جهاز المستخدم باستخدام وسائل التخزين الآمنة. لا تتم مزامنة هذه البيانات مع أي خادم خارجي.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">5</span> خصوصية الأطفال</h2>
+      <p>تطبيق AthanSal مناسب لجميع الأعمار. لا نجمع عن قصد أي معلومات تعريف شخصية من الأطفال دون سن 13 عاماً. إذا علم ولي الأمر أن طفله قدّم معلومات شخصية دون موافقته، فيرجى التواصل معنا وسنقوم بحذفها فوراً.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">6</span> أمان البيانات</h2>
+      <p>نتخذ إجراءات تقنية وتنظيمية معقولة لحماية البيانات من الوصول غير المصرح به أو الفقدان أو سوء الاستخدام. تتم معالجة بيانات الكاميرا ومستشعر التقارب محلياً على الجهاز دون إرسالها إلى أي جهة خارجية.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">7</span> التغييرات على هذه السياسة</h2>
+      <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر أي تحديثات على هذه الصفحة مع تحديث تاريخ "آخر تعديل" أدناه.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">8</span> التواصل معنا</h2>
+      <p>لأي أسئلة أو استفسارات حول سياسة الخصوصية الخاصة بتطبيق AthanSal:</p>
+      <p><strong>المطوّر:</strong> AppSal<br>
+      <strong>البريد الإلكتروني:</strong> <a href="mailto:appsal4m@gmail.com">appsal4m@gmail.com</a></p>
+    </div>
+
+    <footer>آخر تعديل: يناير 2026</footer>
+  </div>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <div class="en">
+
+    <div class="card">
+      <h2><span class="num">1</span> Introduction</h2>
+      <p>Developer <strong>AppSal</strong> ("we", "our", or "us") is committed to protecting the privacy of <strong>AthanSal</strong> users. This document explains how the app handles data and permissions, and we are committed to not collecting or sharing any personal data with third parties.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">2</span> Permissions We Use</h2>
+      <p>AthanSal requests the following permissions for specific, functional purposes only:</p>
+      <ul>
+        <li><strong>Camera:</strong> Used solely to count Rak'ahs during prayer. No images or videos are recorded, stored, or shared. All processing happens locally on the device.</li>
+        <li><strong>Proximity Sensor:</strong> Used in conjunction with the camera to improve Rak'ah counting accuracy. No personal data is collected.</li>
+        <li><strong>Notifications:</strong> Used to send prayer time alerts and reminders. You can disable them at any time from the app or system settings.</li>
+      </ul>
+      <div class="note">
+        All permissions are used only while the relevant feature is active. No data generated by these permissions is stored on external servers.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">3</span> Information We Do NOT Collect</h2>
+      <ul>
+        <li>We do not request or collect precise GPS or geolocation data.</li>
+        <li>We do not access your contacts, messages, or personal files.</li>
+        <li>We do not sell, rent, or trade any personal data with third parties.</li>
+        <li>We do not collect biometric data, images, or audio recordings.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">4</span> Local Storage</h2>
+      <p>User preferences (such as notification settings, sound, and theme) are saved locally on the user's device using secure storage. This data is not synced with any external server.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">5</span> Children's Privacy</h2>
+      <p>AthanSal is suitable for all ages. We do not knowingly collect personally identifiable information from children under 13. If a parent or guardian becomes aware that their child has provided personal information without consent, please contact us and we will promptly delete it.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">6</span> Data Security</h2>
+      <p>We implement reasonable technical and organizational measures to protect data against unauthorized access, loss, or misuse. Camera and proximity sensor data is processed locally on the device and is not transmitted to any external party.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">7</span> Changes to This Policy</h2>
+      <p>We may update our Privacy Policy from time to time. Any updates will be posted on this page with an updated "Last updated" date below.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">8</span> Contact Us</h2>
+      <p>If you have any questions or concerns regarding this Privacy Policy:</p>
+      <p><strong>Developer:</strong> AppSal<br>
+      <strong>Email:</strong> <a href="mailto:appsal4m@gmail.com">appsal4m@gmail.com</a></p>
+    </div>
+
+    <footer>Last updated: January 2026</footer>
+  </div>
+
+</div>
+
+<script>
+  function setLang(lang){
+    var body = document.body;
+    var ar = document.getElementById('btn-ar');
+    var en = document.getElementById('btn-en');
+
+    if(lang === 'ar'){
+      body.classList.remove('show-en');
+      body.setAttribute('dir','rtl');
+      body.setAttribute('lang','ar');
+      document.title = 'سياسة الخصوصية | AthanSal';
+      ar.classList.add('active');
+      en.classList.remove('active');
+    } else {
+      body.classList.add('show-en');
+      body.setAttribute('dir','ltr');
+      body.setAttribute('lang','en');
+      document.title = 'Privacy Policy | AthanSal';
+      en.classList.add('active');
+      ar.classList.remove('active');
+    }
+  }
+</script>
+
+</body>
+</html>
